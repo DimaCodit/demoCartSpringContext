@@ -41,6 +41,10 @@ public class Client {
                 }
 
             }
+            else if (params[0].trim().equals("q")) {
+                break;
+            }
+
         }
     }
 }
