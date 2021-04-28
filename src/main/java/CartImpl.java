@@ -1,4 +1,5 @@
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component("Cart")
+@Scope("prototype")
 public class CartImpl implements Cart{
 
     ProductRepository productRepository;
